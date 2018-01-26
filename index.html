@@ -1,18 +1,31 @@
 <html>
   <head>
-    <script src="aframe.min.js"></script>
-    <script src = "aframe-environment-component.min.js"></script>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
     <a-scene>
-      <a-asset item id = "charizard" src = "pokemon/charizard/scene.gltf"></a-asset>
-      <a-asset item id = "trainer_male" src = "pokemon/trainer_male/scene.gltf"></a-asset>
-      <a-asset item id = "trainer_female" src = "pokemon/trainer_female/scene.gltf"></a-asset>
-      <a-asset item id = "r2d2" src = "r2d2/scene.gltf"></a-asset>
-      <a-asset item id = "cloud" src = "clouds/scene.gltf"></a-asset>
-      <a-asset item id = "blastiose" src = "pokemon/blastiose/scene.gltf"></a-asset>
-      <a-asset item id = "skull" src = "skull/scene.gltf"></a-asset>
-      <a-asset item id = "fire" src = "fire/scene.gltf"></a-asset>
+      <a-asset item id = "charizard" src = "pokemon/charizard/scene.gltf">
+        <!-- Creative Commons attribution under CC 4.0. Charizard 3d model by akennedy007-->
+      </a-asset>
+      <a-asset item id = "trainer_male" src = "pokemon/trainer_male/scene.gltf">
+        <!-- Creative Commons attribution under CC 4.0. pokemon trainer 3d model by Pikachu93 -->
+      </a-asset>
+      <a-asset item id = "trainer_female" src = "pokemon/trainer_female/scene.gltf">
+        <!-- Creative Commons attribution under CC 4.0. pokemon trainer 3d model by Skuddbutt  -->
+      </a-asset>
+      <a-asset item id = "r2d2" src = "r2d2/scene.gltf">
+        <!-- Creative Commons attribution under CC 4.0. pokemon trainer 3d model by Kataphoric  -->
+      </a-asset>
+      <a-asset item id = "blastiose" src = "pokemon/blastiose/scene.gltf">
+        <!-- Creative Commons attribution under CC 4.0. pokemon trainer 3d model by iqbalmulyawan -->
+      </a-asset>
+      <a-asset item id = "skull" src = "skull/scene.gltf">
+        <!-- Creative Commons attribution under CC 4.0. pokemon trainer 3d model by martinjario -->
+      </a-asset>
+      <a-asset item id = "fire" src = "fire/scene.gltf">
+        <!-- Creative Commons attribution under CC 4.0. pokemon trainer 3d model by Scott VanArsdale -->
+      </a-asset>
       <a-entity environment="preset: forest; fog : 0"></a-entity>
       <a-entity gltf-model="#charizard" position = "19.53 4.606 1.983" scale = "0.4 0.4 0.4" rotation = "0 -90 0"> </a-entity>
       <a-entity gltf-model="#skull" position = "0.251 24.09 -0.65" scale = "4 4 4">
@@ -36,8 +49,6 @@
       <a-entity gltf-model="#trainer_female" position="0.020 -0.47 13.35" scale = "0.07 0.07 0.07" rotation = "0 180 0"></a-entity>
       <a-entity gltf-model="#fire" position = "7.946 0.837 13.41" scale = "1.5 1.5 1.5"></a-entity>
       <a-plane position="0 0.340 .0543" rotation="-90 0 0" width="30" height="22" src = "battle_ground.jpg"></a-plane>
-
-
     </a-scene>
   </body>
 </html>
